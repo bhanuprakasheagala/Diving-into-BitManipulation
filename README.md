@@ -8,3 +8,4 @@ Learning to Manipulate bits and bytes from basics.
 5. Turn on K'th Bit in a number
 6. Check if K'th Bit is set for a number
 7. Toggle the K'th Bit in a number
+8. Unset the Rightmost Set bit of a number
