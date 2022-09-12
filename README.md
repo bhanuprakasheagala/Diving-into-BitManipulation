@@ -11,3 +11,4 @@ Learning to Manipulate bits and bytes from basics.
 8. Unset the Rightmost Set bit of a number
 9. Check if a positive integer is a power of 2
 10. Find the position of the Rightmost set bit
+11. Find the position of the only set bit in a number
