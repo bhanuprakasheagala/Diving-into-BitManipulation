@@ -1,0 +1,26 @@
+BitHack1: Convert Uppercase Character to Lowercase.
+We can do it by performing Bitwise OR operation between the given character and space. Yeah, SPACE
+
+CodeSnippet:
+
+for(char ch = 'A'; ch <= 'Z'; ch++) {
+    cout << char(ch | ' ');
+}
+
+Output: abcdefghijklmnopqrstuvwxyz
+
+
+BitHack2: Convert Lowercase Character to Uppercase.
+We can do it by performing Bitwise AND operation between the given character and underscore. Yeah, I mean `_`
+
+CodeSnippet:
+
+for(char ch = 'a'; ch <= 'z'; ch++) {
+  cout << char(ch & '_');
+}
+
+Output: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+That's it. I know things are strange here. It's the Universe of Bits.
+
+Keep Learning!
