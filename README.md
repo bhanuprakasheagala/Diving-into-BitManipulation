@@ -13,3 +13,4 @@ Learning to Manipulate bits and bytes from basics.
 10. Find the position of the Rightmost set bit
 11. Find the position of the only set bit in a number
 12. Computing Parity of a number
+13. Conversions from Uppercase to Lowercase and LowerCase to Uppercase
