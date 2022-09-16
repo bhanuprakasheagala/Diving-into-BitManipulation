@@ -1,0 +1,43 @@
+Given any alphabet we can convert from one case to other case by performing Ex-OR operation with single space.
+
+But why it works?
+
+Let's see:
+
+Char      ASCII             Binary                            Char          ASCII         Binary
+-----------------------------------                           ------------------------------------
+ A         65              01000001                            a              97         01100001
+ B         66              01000010                            b              98         01100010
+ C         67              01000011                            c              99         01100011
+ D         68              01000100                            d              100        01100100
+ E         69              01000101                            e              110        01100101
+ 
+ And so on..
+ 
+ Here is the catch on why it works. If we observe above Binary forms of Upper case and their corresponding Lower case alphabets, they differ only
+ in their third significant bit. For Uppercase letter it is 0, and for Lowercase letter it is 1. If we can set/unset this third significant bit, we
+ can invert any character's case.
+ 
+ Now, Space(' ') ASCII : 32               00100000
+ and, Underscore('_') ASCII : 97          01011111
+ 
+ If we take bitwise OR of an uppercase character with ' ', the third significant bit will be set, and we will get its lowercase equivalent.
+ 
+ If we take bitwise AND of a lowercase character with '_', the third significant bit will be unset, and we will get its uppercase equivalent.
+ 
+ f we take bitwise XOR of an uppercase or lowercase characters with ' ' (ASCII 00100000), only its third significant bit will be toggled, 
+ i.e., lowercase becomes uppercase and vice versa.
+ 
+ Code Snippet:
+ //Convert lowercase alphabet to uppercase
+ for(char ch = 'a'; ch <= 'z'; ch++) {
+    cout << char(ch ^ ' '));    //ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ }
+ 
+ //Convert uppercase alphabet to lowercase
+ for(char ch = 'A'; ch <=' Z'; ch++) {
+    cout << char(ch ^ ' '));    //abcdefghijklmnopqrstuvwxyz
+ }
+ 
+ That's it for now. Keep Learning!
+ Bye : )
